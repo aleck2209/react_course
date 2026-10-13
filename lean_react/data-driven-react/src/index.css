@@ -1,0 +1,23 @@
+* {
+  font-family: 'Inter';
+  margin: 0;
+}
+
+.header {
+  background-color: #F55A5A;
+  padding: 1rem;
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 24px;
+}
+
+.header > span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
