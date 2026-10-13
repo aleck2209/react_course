@@ -10,6 +10,7 @@
   gap: .4rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .logo {
@@ -20,4 +21,43 @@
   color: #fff;
   font-size: .875rem;
   font-weight: 200;
+}
+
+.main {
+  margin: 0 3rem;
+}
+
+.top-card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4px;
+}
+
+.top-card img {
+  width: 7px;
+}
+
+.top-card p {
+  font-size: 10px;
+}
+
+.top-card a {
+  font-size: 10px;
+  color: #918E9B;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.card-date {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.card-text {
+  font-size: 10px;
 }
