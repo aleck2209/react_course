@@ -27,6 +27,19 @@
   margin: 0 3rem;
 }
 
+.card {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+
+.card-img {
+  display: block;
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
 .top-card {
   display: flex;
   gap: 1rem;
