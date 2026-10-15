@@ -1,14 +1,19 @@
 export default function Main() {
 	const ingredients = ["Chicken", "Oregano", "Tomatoes"];
 
-    function handleOnSubmit(e) {        
-        e.preventDefault()
-        console.log("Form submitted!")
-    }
-
     const listIncredients = ingredients.map((item) => (
         <li key={item}>{item}</li>
     ))
+
+    function handleOnSubmit(e) {        
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget)
+        const ingredient = formData.get("ingredient");
+        
+        listIncredients.push(ingredient);
+        console.log(listIncredients)
+    }
+
 
 	return (
 		<main>
@@ -17,6 +22,7 @@ export default function Main() {
 					type="text"
 					placeholder="e.g. oregano"
 					aria-label="Add ingredient"
+                    name="ingredient"
 				/>
 				<button>Add ingredient</button>
 			</form>
