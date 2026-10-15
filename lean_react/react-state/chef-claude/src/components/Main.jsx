@@ -1,12 +1,18 @@
 export default function Main() {
 	const ingredients = ["Chicken", "Oregano", "Tomatoes"];
 
-    const listIncredients = ingredients.map((item, index) => (
-        <li key={index}>{item}</li>
+    function handleOnSubmit(e) {        
+        e.preventDefault()
+        console.log("Form submitted!")
+    }
+
+    const listIncredients = ingredients.map((item) => (
+        <li key={item}>{item}</li>
     ))
+
 	return (
 		<main>
-			<form className="add-ingredient-form">
+			<form className="add-ingredient-form" onSubmit={handleOnSubmit}>
 				<input
 					type="text"
 					placeholder="e.g. oregano"
